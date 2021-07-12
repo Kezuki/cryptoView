@@ -1,0 +1,26 @@
+.button {
+  padding: 6px 14px;
+  background-color: #0d64b5;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button_active {
+  background-color: #0e5291;
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+}

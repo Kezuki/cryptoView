@@ -1,0 +1,101 @@
+.converter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.converter__block {
+    width: 100%;
+    max-width: 260px;
+}
+
+.converter__tab {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.converter__tab-item {
+    flex-grow: 1;
+    padding: 6px 12px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #cdcdcd;
+    transition: 0.3s;
+    margin-bottom: 8px;
+    color: #000;
+    border-radius: 0;
+}
+
+.converter__tab-item:first-of-type {
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+}
+
+.converter__tab-item:nth-child(3) {
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+}
+
+.converter__tab-item:hover {
+    opacity: 0.7;
+}
+
+.converter__tab-item_active {
+    background-color: #4bc0c0;
+    color: #fff;
+}
+
+.converter__input-box {
+    height: 100px;
+    padding: 16px 10px;
+    width: 100%;
+    margin-top: 8px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.converter__input {
+    width: 100%;
+    font-size: 22px;
+    border: 0;
+    background: #fff;
+    color: #000;
+}
+
+.converter__input-text {
+    color: #808080;
+    font-size: 13px;
+    align-self: flex-end;
+}
+
+.converter__transfer {
+    width: 30px;
+    height: 30px;
+    background-image: url("/img/transfer.svg");
+    background-color: #fff;
+    margin: 24px;
+    flex-shrink: 0;
+}
+
+.converter__info {
+    width: 100%;
+    text-align: center;
+    margin: 24px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .converter {
+        flex-direction: column;
+    }
+
+    .converter__transfer {
+        transform: rotate(90deg);
+    }
+}

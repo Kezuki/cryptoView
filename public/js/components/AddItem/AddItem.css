@@ -1,0 +1,10 @@
+.add-item__btn {
+    display: block;
+    width: 60px;
+  }
+  
+  .add-item__input {
+    display: flex;
+    width: 100%;
+    margin-right: 5px;
+  }

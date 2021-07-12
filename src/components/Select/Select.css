@@ -1,0 +1,18 @@
+.react-select__option img {
+    width: 20px !important;
+    height: 20px !important;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+.react-select__option {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    line-height: 1;
+}
+
+
+.react-select-container {
+    width: 100%;
+}
